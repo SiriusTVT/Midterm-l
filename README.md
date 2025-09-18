@@ -13,17 +13,31 @@ Este proyecto implementa un algoritmo de planificación MLFQ que permite simular
 ## Estructura del Proyecto
 
 ```
-├── main.cpp              # Programa principal
-├── Proceso.h/.cpp        # Clase Proceso
-├── Cola.h/.cpp           # Clase Cola (maneja algoritmos)
-├── PlanificadorMLFQ.h/.cpp # Clase principal del planificador
-├── ArchivoUtils.h/.cpp   # Utilidades para manejo de archivos
-├── Makefile              # Archivo de compilación
-├── README.md             # Este archivo
-└── Pruebas/              # Archivos de prueba
-    ├── mlq001.txt
-    ├── mlq002.txt
-    └── ...
+├── main.cpp                  # Programa principal con interfaz de usuario
+├── mlfq_scheduler.exe        # Ejecutable compilado del simulador
+├── Proceso.h/.cpp            # Clase Proceso - representa procesos individuales
+├── Cola.h/.cpp               # Clase Cola - maneja algoritmos de planificación
+├── PlanificadorMLFQ.h/.cpp   # Clase principal del planificador MLFQ
+├── ArchivoUtils.h/.cpp       # Utilidades para lectura/escritura de archivos
+├── Makefile                  # Script de compilación automatizada
+├── README.md                 # Documentación principal del proyecto
+├── README_MLFQ.md            # Documentación específica del algoritmo MLFQ
+├── GUIA_DE_USO.md            # Guía detallada de uso del simulador
+├── SO-P1-2025-II.pdf         # Documento original del proyecto
+└── Pruebas/                  # Directorio con archivos de casos de prueba
+    ├── mlq001.txt            # Caso de prueba 1
+    ├── mlq002.txt            # Caso de prueba 2
+    ├── mlq003.txt            # Caso de prueba 3
+    ├── mlq004.txt            # Caso de prueba 4
+    ├── mlq005.txt            # Caso de prueba 5
+    ├── mlq006.txt            # Caso de prueba 6
+    ├── mlq007.txt            # Caso de prueba 7
+    ├── mlq010.txt            # Caso de prueba 10
+    ├── mlq014.txt            # Caso de prueba 14
+    ├── mlq019.txt            # Caso de prueba 19
+    ├── mlq021.txt            # Caso de prueba 21
+    ├── mlq025.txt            # Caso de prueba 25
+    └── mlq026.txt            # Caso de prueba 26
 ```
 
 ## Compilación
@@ -47,6 +61,10 @@ make windows
 
 ### Ejecución básica
 ```bash
+# En Windows (ejecutable ya compilado):
+./mlfq_scheduler.exe
+
+# En Linux/Mac:
 ./mlfq_scheduler
 ```
 
@@ -114,24 +132,34 @@ A;2;5;2;RR(3)
 
 ## Ejemplo de Uso
 
-1. Compilar el proyecto:
+1. **Opción 1 - Usar ejecutable ya compilado**:
    ```bash
-   make
+   # En Windows:
+   ./mlfq_scheduler.exe
    ```
 
-2. Ejecutar con archivo de prueba:
+2. **Opción 2 - Recompilar desde código fuente**:
    ```bash
-   ./mlfq_scheduler
-   # Ingrese: Pruebas/mlq001.txt
+   make clean    # Limpiar archivos previos
+   make windows  # Compilar para Windows
    ```
 
-3. Seleccionar opción del menú (1-6)
+3. **Ejecutar simulación**:
+   ```bash
+   # Ingrese ruta del archivo cuando se solicite:
+   Pruebas/mlq001.txt
+   
+   # Seleccione opción del menú (1-6):
+   1  # Para Configuración A
+   ```
 
-4. Revisar archivos de salida generados
+4. **Revisar resultados**:
+   - Archivo de resultados: `Pruebas/mlq001_ConfigA.txt`
+   - Reporte detallado: `Pruebas/mlq001_ConfigA_detalle.txt`
 
 ## Características Técnicas
 
-- **Lenguaje**: C++11
+- **Lenguaje**: C++
 - **Paradigma**: Programación Orientada a Objetos
 - **Algoritmos soportados**: Round Robin, SJF, STCF
 - **Manejo de archivos**: Lectura de entrada y escritura de resultados
@@ -140,10 +168,16 @@ A;2;5;2;RR(3)
 ## Archivos de Prueba
 
 Los archivos en la carpeta `Pruebas/` contienen diferentes escenarios:
-- `mlq001.txt`: Caso básico
+- `mlq001.txt`: Caso básico con 5 procesos
 - `mlq002.txt`: Llegadas escalonadas
-- `mlq003.txt`: Procesos con diferentes tiempos
-- Y más...
+- `mlq003.txt`: Procesos con diferentes tiempos de ráfaga
+- `mlq004.txt` - `mlq026.txt`: Casos adicionales con variaciones
+
+## Documentación Adicional
+
+- **`GUIA_DE_USO.md`**: Guía completa de instalación, compilación y uso
+- **`README_MLFQ.md`**: Documentación técnica específica del algoritmo MLFQ
+- **`SO-P1-2025-II.pdf`**: Documento original del proyecto
 
 ## Limpieza
 

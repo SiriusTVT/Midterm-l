@@ -1,0 +1,18 @@
+# Object files
+*.o
+
+# Executable files
+*.exe
+
+# Backup files
+*~
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.vs/
+
+# OS generated files
+.DS_Store
+Thumbs.db

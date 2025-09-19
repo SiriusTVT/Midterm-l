@@ -1,0 +1,14 @@
+# Resultados de simulación MLFQ
+# Formato: etiqueta;BT;AT;Q;Pr;WT;CT;RT;TAT
+etiqueta;BT;AT;Q;Pr;WT;CT;RT;TAT
+p1;30;0;1;5;34;64;0;64
+p2;12;1;2;4;75;88;7;87
+p3;18;3;2;3;74;95;10;92
+p4;25;5;3;2;53;83;19;78
+p5;10;7;3;1;70;87;23;80
+
+# PROMEDIOS
+# Waiting Time (WT): 61.20
+# Completion Time (CT): 83.40
+# Response Time (RT): 11.80
+# Turnaround Time (TAT): 80.20

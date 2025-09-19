@@ -1,0 +1,24 @@
+# Reporte Detallado de Simulación MLFQ
+# Historial de Ejecución
+Proceso;Tiempo_Inicio;Tiempo_Fin;Nivel_Cola;Algoritmo
+A;0;1;2;RR(1)
+B;1;2;2;RR(1)
+C;2;5;3;RR(3)
+D;5;8;3;RR(3)
+A;8;11;3;RR(3)
+B;11;14;3;RR(3)
+E;14;18;4;RR(4)
+C;18;22;4;RR(4)
+D;22;26;4;RR(4)
+A;26;28;3;RR(4)
+B;28;32;4;RR(4)
+B;32;33;4;SJF
+C;33;36;4;SJF
+E;36;40;4;SJF
+D;40;48;4;SJF
+
+# Métricas Promedio
+Promedio_WT;27.40
+Promedio_CT;37.00
+Promedio_RT;4.40
+Promedio_TAT;37.00

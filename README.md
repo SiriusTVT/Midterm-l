@@ -2,6 +2,8 @@
 
 Implementación en C++ de un simulador de planificación Multi-Level Feedback Queue usando programación orientada a objetos.
 
+**Autor:** Juan David Troncoso
+
 ## Descripción
 
 Este proyecto implementa un algoritmo de planificación MLFQ que permite simular diferentes configuraciones de colas con distintos algoritmos de planificación:
@@ -21,12 +23,21 @@ Este proyecto implementa un algoritmo de planificación MLFQ que permite simular
 ├── ArchivoUtils.h/.cpp       # Utilidades para lectura/escritura de archivos
 ├── Makefile                  # Script de compilación automatizada
 ├── README.md                 # Documentación principal del proyecto
-├── README_MLFQ.md            # Documentación específica del algoritmo MLFQ
-├── GUIA_DE_USO.md            # Guía detallada de uso del simulador
 ├── SO-P1-2025-II.pdf         # Documento original del proyecto
+├── Proyecto Video.mp4        # Video demostración del proyecto
 └── Pruebas/                  # Directorio con archivos de casos de prueba
+    ├── mlq001_ConfigA.txt        # Resultados configuración A - caso 1
+    ├── mlq001_ConfigA_detalle.txt # Reporte detallado config A - caso 1
+    ├── mlq001_ConfigB.txt        # Resultados configuración B - caso 1
+    ├── mlq001_ConfigB_detalle.txt # Reporte detallado config B - caso 1
+    ├── mlq001_ConfigC.txt        # Resultados configuración C - caso 1
+    ├── mlq001_ConfigC_detalle.txt # Reporte detallado config C - caso 1
     ├── mlq001.txt            # Caso de prueba 1
+    ├── mlq002_ConfigB.txt        # Resultados configuración B - caso 2
+    ├── mlq002_ConfigB_detalle.txt # Reporte detallado config B - caso 2
     ├── mlq002.txt            # Caso de prueba 2
+    ├── mlq003_ConfigC.txt        # Resultados configuración C - caso 3
+    ├── mlq003_ConfigC_detalle.txt # Reporte detallado config C - caso 3
     ├── mlq003.txt            # Caso de prueba 3
     ├── mlq004.txt            # Caso de prueba 4
     ├── mlq005.txt            # Caso de prueba 5
@@ -175,9 +186,8 @@ Los archivos en la carpeta `Pruebas/` contienen diferentes escenarios:
 
 ## Documentación Adicional
 
-- **`GUIA_DE_USO.md`**: Guía completa de instalación, compilación y uso
-- **`README_MLFQ.md`**: Documentación técnica específica del algoritmo MLFQ
 - **`SO-P1-2025-II.pdf`**: Documento original del proyecto
+- **`Proyecto Video.mp4`**: Video demostración del funcionamiento del simulador
 
 ## Limpieza
 
@@ -196,4 +206,9 @@ make clean-obj    # Elimina solo archivos objeto
 
 ## Autor
 
+**Juan David Troncoso**  
 Implementación del algoritmo MLFQ según especificaciones del curso de Sistemas Operativos.
+
+---
+
+*Proyecto desarrollado como parte del examen parcial de Sistemas Operativos - 2025-II*
